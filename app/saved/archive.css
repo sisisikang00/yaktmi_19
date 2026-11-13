@@ -1,0 +1,344 @@
+/* Saved archive: keep the shared shell and artwork scoped to this route. */
+.site-shell:has(.storage-page) > .site-masthead {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 10px max(clamp(22px, 8vw, 40px), calc((100% - 680px) / 2));
+  background: #123ba5;
+  color: #fff;
+  border-bottom: 2px solid #081b66;
+}
+
+.site-shell:has(.storage-page) .site-wordmark {
+  display: block;
+  flex-shrink: 0;
+}
+
+.site-shell:has(.storage-page) .site-masthead .site-wordmark-text {
+  display: none;
+}
+
+.site-shell:has(.storage-page) .site-masthead .site-wordmark-pixel {
+  display: block;
+  width: clamp(92px, 24vw, 130px);
+  height: auto;
+}
+
+.site-wordmark-pixel image {
+  image-rendering: pixelated;
+}
+
+.site-shell:has(.storage-page) .site-signature {
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  font-size: clamp(15px, 4vw, 21px);
+  font-weight: 900;
+  letter-spacing: .045em;
+  white-space: nowrap;
+}
+
+.storage-page {
+  --archive-gutter: clamp(7px, 1.8vw, 20px);
+  --archive-width: 680px;
+  background: #ded8f9;
+  overflow: clip;
+}
+
+.storage-page .scene-header {
+  background: linear-gradient(120deg, var(--blue), #3b60c8);
+  padding: 0 max(var(--archive-gutter), calc((100% - var(--archive-width)) / 2));
+}
+
+.storage-page .scene-header::after {
+  background: #ded8f9;
+  height: 9px;
+}
+
+.storage-page .scene-heading-row {
+  min-height: clamp(90px, 23vw, 126px);
+  gap: clamp(12px, 3vw, 22px);
+  padding-block: 7px 10px;
+}
+
+.storage-page .scene-heading-row h1 {
+  font-size: clamp(27px, 6vw, 40px);
+  white-space: nowrap;
+}
+
+.storage-page .scene-heading-row > .potion-character {
+  width: clamp(89px, 23vw, 133px);
+  aspect-ratio: 260 / 249;
+}
+
+.storage-page .back-button {
+  width: clamp(34px, 8.8vw, 45px);
+  height: clamp(34px, 8.8vw, 45px);
+}
+
+.storage-page .header-cloud {
+  display: none;
+}
+
+.storage-page .page-body {
+  max-width: calc(var(--archive-width) + 2 * var(--archive-gutter));
+  margin-inline: auto;
+  padding: clamp(15px, 4vw, 26px) var(--archive-gutter) 0;
+}
+
+.storage-page .storage-menu {
+  max-width: 560px;
+  gap: clamp(7px, 2vw, 12px);
+  margin: 0 auto;
+}
+
+.storage-page .storage-menu > button {
+  --card-color: #fbf2e6;
+  --decoration-color: #c98518;
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: clamp(6px, 2vw, 13px);
+  width: 100%;
+  aspect-ratio: 7.2;
+  min-height: 44px;
+  padding: 2px clamp(10px, 3.4vw, 25px);
+  color: var(--navy);
+  background: var(--card-color);
+  border: 5px solid transparent;
+  border-image: var(--pixel-border) 4 stretch;
+  font-size: clamp(15px, 4.4vw, 21px);
+  text-align: left;
+  box-shadow: inset 0 0 0 1px #ffffffc9;
+}
+
+.storage-page .storage-menu > .archive-viewed {
+  --card-color: #deeafd;
+  --decoration-color: #6486cc;
+}
+
+.storage-page .storage-menu > .archive-all {
+  --card-color: #f9e3f1;
+  --decoration-color: #c05793;
+}
+
+.storage-page .storage-menu > button[aria-pressed="true"] strong {
+  background: #d6cff2;
+}
+
+.storage-page .storage-menu > button:hover {
+  filter: brightness(.97);
+}
+
+.storage-page .storage-menu > button:focus-visible {
+  outline-offset: -6px;
+}
+
+.storage-page .storage-menu > button:active {
+  transform: none;
+}
+
+.storage-page .storage-menu .pixel-icon {
+  display: block;
+  width: clamp(26px, 8vw, 48px);
+  height: clamp(26px, 8vw, 48px);
+}
+
+.archive-card-art {
+  justify-self: end;
+  padding-right: 9px;
+  color: var(--decoration-color);
+  opacity: .53;
+  font-size: clamp(12px, 4vw, 25px);
+  white-space: nowrap;
+}
+
+.storage-page .storage-menu strong {
+  min-width: 2.7em;
+  margin: 0;
+  padding: 3px 6px;
+  background: #d3cdfb;
+  border-radius: 8px;
+  text-align: center;
+  font-size: clamp(12px, 3.5vw, 17px);
+  white-space: nowrap;
+}
+
+.archive-chevron {
+  width: .52em;
+  height: .52em;
+  border-top: .14em solid currentColor;
+  border-right: .14em solid currentColor;
+  transform: rotate(45deg);
+}
+
+.storage-page .collection-toolbar {
+  max-width: 560px;
+  margin: 12px auto 16px;
+  font-size: clamp(14px, 3.5vw, 17px);
+  font-weight: 800;
+}
+
+.storage-page .view-switch {
+  gap: 5px;
+}
+
+.storage-page .view-switch button {
+  width: 40px;
+  min-height: 40px;
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.storage-page .view-switch button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--blue);
+}
+
+.archive-empty {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 3px 5px 0;
+  text-align: center;
+}
+
+.archive-bubble {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  width: min(55%, 308px);
+  min-width: min(100%, 185px);
+  aspect-ratio: 5.85;
+  padding: 1px 6px;
+  border: 5px solid transparent;
+  border-image: var(--pixel-border) 4 stretch;
+  background: #f2f2fd;
+  font-size: clamp(13px, 3.9vw, 23px);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.archive-bubble::before {
+  content: "✦";
+  position: absolute;
+  top: -13px;
+  left: -11px;
+  color: #ffd456;
+  text-shadow: 1px 1px var(--navy), -1px -1px var(--navy);
+  line-height: 1;
+}
+
+.archive-bubble::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 6px);
+  bottom: -10px;
+  width: 12px;
+  height: 9px;
+  background: var(--navy);
+  clip-path: polygon(0 0,100% 0,100% 27%,75% 27%,75% 57%,50% 57%,50% 100%,25% 100%,25% 58%,0 58%);
+}
+
+.archive-search-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  color: var(--blue);
+  font-size: clamp(14px, 3.7vw, 17px);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.archive-sleep-scene {
+  position: relative;
+  display: grid;
+  place-items: end center;
+  width: 100%;
+  min-height: clamp(145px, 43vw, 213px);
+  padding: 12px 0 9px;
+  isolation: isolate;
+}
+
+.archive-sleep-scene > .potion-character {
+  width: min(55%, 243px);
+  aspect-ratio: 322 / 249;
+}
+
+.archive-spark {
+  position: absolute;
+  z-index: 1;
+  color: #ffd456;
+  text-shadow: 1px 1px var(--navy), -1px -1px var(--navy), -1px 1px var(--navy), 1px -1px var(--navy);
+  font-size: 21px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.archive-spark-left { left: 16%; bottom: 47%; }
+.archive-spark-right { right: 15%; bottom: 35%; }
+
+.archive-sleep-scene::before,
+.archive-sleep-scene::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: min(27%, 160px);
+  height: clamp(28px, 8vw, 53px);
+  background:
+    radial-gradient(circle at 28% 100%, #a99aef 0 25%, transparent 26%),
+    radial-gradient(circle at 70% 100%, #a99aef 0 23%, transparent 24%),
+    linear-gradient(#afa2ed, #c5b8f4);
+  clip-path: polygon(0 34%, 9% 34%, 9% 12%, 19% 12%, 19% 0, 37% 0, 37% 10%, 48% 10%, 48% 30%, 62% 30%, 62% 47%, 77% 47%, 77% 65%, 92% 65%, 92% 81%, 100% 81%, 100% 100%, 0 100%);
+}
+
+.archive-sleep-scene::before { left: 0; }
+.archive-sleep-scene::after { right: 0; transform: scaleX(-1); }
+.site-shell:has(.storage-page) > .world-landscape { display: none; }
+.site-shell:has(.storage-page) > .site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 24px;
+  border-top: 2px solid #8493d0;
+  padding: 15px max(16px, calc((100% - 680px) / 2));
+  background: #081b66;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.site-shell:has(.storage-page) > .site-footer p {
+  margin: 0;
+  color: #dedcff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .site-shell:has(.storage-page) { max-width: none; }
+  .site-shell:has(.storage-page) > .site-masthead {
+    padding-inline: max(32px, calc((100% - 680px) / 2));
+  }
+}
+
+
+@media (min-width: 601px) and (max-height: 940px) {
+  .storage-page .scene-heading-row { min-height: 108px; }
+  .storage-page .scene-heading-row > .potion-character { width: 98px; }
+  .storage-page .page-body { padding-top: 18px; }
+  .archive-sleep-scene { min-height: 180px; }
+  .archive-sleep-scene > .potion-character { width: 218px; }
+}
+
+@media (max-width: 600px) and (max-height: 840px) {
+  .archive-sleep-scene { min-height: 142px; }
+  .archive-sleep-scene > .potion-character { width: min(49%, 185px); }
+}

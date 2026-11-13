@@ -1,0 +1,235 @@
+{
+  "checkedAt": "2026-11-13T04:11:55.913Z",
+  "screens": [
+    {
+      "width": 375,
+      "screen": "home",
+      "overflow": false,
+      "canvas": 375
+    },
+    {
+      "width": 375,
+      "screen": "search",
+      "overflow": false,
+      "canvas": 375
+    },
+    {
+      "width": 375,
+      "screen": "photo",
+      "overflow": false,
+      "canvas": 360
+    },
+    {
+      "width": 375,
+      "screen": "shape",
+      "overflow": false,
+      "canvas": 360
+    },
+    {
+      "width": 375,
+      "screen": "library",
+      "overflow": false,
+      "canvas": 375
+    },
+    {
+      "width": 375,
+      "screen": "saved",
+      "overflow": false,
+      "canvas": 360
+    },
+    {
+      "width": 375,
+      "screen": "detail",
+      "overflow": false,
+      "canvas": 375
+    },
+    {
+      "width": 430,
+      "screen": "home",
+      "overflow": false,
+      "canvas": 415
+    },
+    {
+      "width": 430,
+      "screen": "search",
+      "overflow": false,
+      "canvas": 430
+    },
+    {
+      "width": 430,
+      "screen": "photo",
+      "overflow": false,
+      "canvas": 415
+    },
+    {
+      "width": 430,
+      "screen": "shape",
+      "overflow": false,
+      "canvas": 415
+    },
+    {
+      "width": 430,
+      "screen": "library",
+      "overflow": false,
+      "canvas": 430
+    },
+    {
+      "width": 430,
+      "screen": "saved",
+      "overflow": false,
+      "canvas": 415
+    },
+    {
+      "width": 430,
+      "screen": "detail",
+      "overflow": false,
+      "canvas": 430
+    },
+    {
+      "width": 768,
+      "screen": "home",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 768,
+      "screen": "search",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 768,
+      "screen": "photo",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 768,
+      "screen": "shape",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 768,
+      "screen": "library",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 768,
+      "screen": "saved",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 768,
+      "screen": "detail",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "home",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "search",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "photo",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "shape",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "library",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "saved",
+      "overflow": false,
+      "canvas": 560
+    },
+    {
+      "width": 1440,
+      "screen": "detail",
+      "overflow": false,
+      "canvas": 560
+    }
+  ],
+  "animation": {
+    "count": 8,
+    "active": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "duration": [
+      4000,
+      4000,
+      4000,
+      4000,
+      4000,
+      4000,
+      4000,
+      4000,
+      4000
+    ],
+    "x": 6,
+    "y": 0,
+    "uiTransform": "none"
+  },
+  "reducedMotion": {
+    "frames": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "motion": "none"
+  },
+  "storage": true,
+  "photoPreview": true,
+  "noPhotoUpload": true,
+  "runtimeErrors": [],
+  "assetErrors": [],
+  "authenticatedMfds": false
+}

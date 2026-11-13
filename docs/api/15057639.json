@@ -1,0 +1,1075 @@
+﻿{
+    "swagger":  "2.0",
+    "info":  {
+                 "description":  "「의약품 낱알식별 정보」 OpenAPI는 식품의약품안전처  관리하는 의약품의 낱알(알약 등) 식별에 필요한 기본 정보들을 제공하는 공공데이터입니다. 제공 항목으로는 품목 기준 코드, 품목명, 업체명, 사업자등록번호, 의약품의 모양, 색 등이 포함되어 있습니다. 이를 통해 사용자는 특정 약의 이름과 제조 또는 수입업체, 품목기준 코드와 같은 고유 식별 정보를 직접 확인할 수 있습니다. 또한, 알약의 모양과 이름을 확인해 오남용을 예방하고, 의료 현장과 소비자 모두의 안전한 복용을 돕는 데 활용될 수 있습니다.",
+                 "version":  "1.0.0",
+                 "title":  "식품의약품안전처_의약품 낱알식별 정보"
+             },
+    "host":  "apis.data.go.kr/1471000/MdcinGrnIdntfcInfoService03",
+    "basePath":  "",
+    "schemes":  [
+                    "https",
+                    "http"
+                ],
+    "paths":  {
+                  "/getMdcinGrnIdntfcInfoList03":  {
+                                                       "get":  {
+                                                                   "responses":  {
+                                                                                     "200":  {
+                                                                                                 "description":  "성공",
+                                                                                                 "schema":  {
+                                                                                                                "type":  "object",
+                                                                                                                "properties":  {
+                                                                                                                                   "header":  {
+                                                                                                                                                  "type":  "object",
+                                                                                                                                                  "description":  "header",
+                                                                                                                                                  "properties":  {
+                                                                                                                                                                     "resultCode":  {
+                                                                                                                                                                                        "type":  "string",
+                                                                                                                                                                                        "description":  "결과코드",
+                                                                                                                                                                                        "properties":  {
+
+                                                                                                                                                                                                       }
+                                                                                                                                                                                    },
+                                                                                                                                                                     "resultMsg":  {
+                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                       "description":  "결과메시지",
+                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                      }
+                                                                                                                                                                                   }
+                                                                                                                                                                 }
+                                                                                                                                              },
+                                                                                                                                   "body":  {
+                                                                                                                                                "type":  "object",
+                                                                                                                                                "description":  "body",
+                                                                                                                                                "properties":  {
+                                                                                                                                                                   "items":  {
+                                                                                                                                                                                 "type":  "object",
+                                                                                                                                                                                 "description":  "items",
+                                                                                                                                                                                 "properties":  {
+                                                                                                                                                                                                    "item":  {
+                                                                                                                                                                                                                 "type":  "object",
+                                                                                                                                                                                                                 "description":  "item",
+                                                                                                                                                                                                                 "properties":  {
+                                                                                                                                                                                                                                    "ITEM_SEQ":  {
+                                                                                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                                                                                     "description":  "품목일련번호",
+                                                                                                                                                                                                                                                     "properties":  {
+
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                                    "ITEM_NAME":  {
+                                                                                                                                                                                                                                                      "type":  "string",
+                                                                                                                                                                                                                                                      "description":  "품목명",
+                                                                                                                                                                                                                                                      "properties":  {
+
+                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                                    "ENTP_SEQ":  {
+                                                                                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                                                                                     "description":  "업체일련번호",
+                                                                                                                                                                                                                                                     "properties":  {
+
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                                    "ENTP_NAME":  {
+                                                                                                                                                                                                                                                      "type":  "string",
+                                                                                                                                                                                                                                                      "description":  "업체명",
+                                                                                                                                                                                                                                                      "properties":  {
+
+                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                                    "CHART":  {
+                                                                                                                                                                                                                                                  "type":  "string",
+                                                                                                                                                                                                                                                  "description":  "성상",
+                                                                                                                                                                                                                                                  "properties":  {
+
+                                                                                                                                                                                                                                                                 }
+                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                    "ITEM_IMAGE":  {
+                                                                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                                                                       "description":  "큰제품이미지",
+                                                                                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                    "PRINT_FRONT":  {
+                                                                                                                                                                                                                                                        "type":  "string",
+                                                                                                                                                                                                                                                        "description":  "표시(앞)",
+                                                                                                                                                                                                                                                        "properties":  {
+
+                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    "PRINT_BACK":  {
+                                                                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                                                                       "description":  "표시(뒤)",
+                                                                                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                    "DRUG_SHAPE":  {
+                                                                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                                                                       "description":  "의약품모양",
+                                                                                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                    "COLOR_CLASS1":  {
+                                                                                                                                                                                                                                                         "type":  "string",
+                                                                                                                                                                                                                                                         "description":  "색깔(앞)",
+                                                                                                                                                                                                                                                         "properties":  {
+
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                    "COLOR_CLASS2":  {
+                                                                                                                                                                                                                                                         "type":  "string",
+                                                                                                                                                                                                                                                         "description":  "색깔(뒤)",
+                                                                                                                                                                                                                                                         "properties":  {
+
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                    "LINE_FRONT":  {
+                                                                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                                                                       "description":  "분할선(앞)",
+                                                                                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                    "LINE_BACK":  {
+                                                                                                                                                                                                                                                      "type":  "string",
+                                                                                                                                                                                                                                                      "description":  "분할선(뒤)",
+                                                                                                                                                                                                                                                      "properties":  {
+
+                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                                    "LENG_LONG":  {
+                                                                                                                                                                                                                                                      "type":  "string",
+                                                                                                                                                                                                                                                      "description":  "크기(장축)",
+                                                                                                                                                                                                                                                      "properties":  {
+
+                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                  },
+                                                                                                                                                                                                                                    "LENG_SHORT":  {
+                                                                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                                                                       "description":  "크기(단축)",
+                                                                                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                    "THICK":  {
+                                                                                                                                                                                                                                                  "type":  "string",
+                                                                                                                                                                                                                                                  "description":  "크기(두께)",
+                                                                                                                                                                                                                                                  "properties":  {
+
+                                                                                                                                                                                                                                                                 }
+                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                    "IMG_REGIST_TS":  {
+                                                                                                                                                                                                                                                          "type":  "string",
+                                                                                                                                                                                                                                                          "description":  "약학정보원 이미지 생성일",
+                                                                                                                                                                                                                                                          "properties":  {
+
+                                                                                                                                                                                                                                                                         }
+                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                    "CLASS_NO":  {
+                                                                                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                                                                                     "description":  "분류번호",
+                                                                                                                                                                                                                                                     "properties":  {
+
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                                    "CLASS_NAME":  {
+                                                                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                                                                       "description":  "분류명",
+                                                                                                                                                                                                                                                       "properties":  {
+
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                    "ETC_OTC_NAME":  {
+                                                                                                                                                                                                                                                         "type":  "string",
+                                                                                                                                                                                                                                                         "description":  "전문/일반",
+                                                                                                                                                                                                                                                         "properties":  {
+
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                    "ITEM_PERMIT_DATE":  {
+                                                                                                                                                                                                                                                             "type":  "string",
+                                                                                                                                                                                                                                                             "description":  "품목허가일자",
+                                                                                                                                                                                                                                                             "properties":  {
+
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                         },
+                                                                                                                                                                                                                                    "FORM_CODE_NAME":  {
+                                                                                                                                                                                                                                                           "type":  "string",
+                                                                                                                                                                                                                                                           "description":  "제형코드이름",
+                                                                                                                                                                                                                                                           "properties":  {
+
+                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                       },
+                                                                                                                                                                                                                                    "MARK_CODE_FRONT_ANAL":  {
+                                                                                                                                                                                                                                                                 "type":  "string",
+                                                                                                                                                                                                                                                                 "description":  "마크내용(앞)",
+                                                                                                                                                                                                                                                                 "properties":  {
+
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                             },
+                                                                                                                                                                                                                                    "MARK_CODE_BACK_ANAL":  {
+                                                                                                                                                                                                                                                                "type":  "string",
+                                                                                                                                                                                                                                                                "description":  "마크내용(뒤)",
+                                                                                                                                                                                                                                                                "properties":  {
+
+                                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                    "MARK_CODE_FRONT_IMG":  {
+                                                                                                                                                                                                                                                                "type":  "string",
+                                                                                                                                                                                                                                                                "description":  "마크이미지(앞)",
+                                                                                                                                                                                                                                                                "properties":  {
+
+                                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                    "MARK_CODE_BACK_IMG":  {
+                                                                                                                                                                                                                                                               "type":  "string",
+                                                                                                                                                                                                                                                               "description":  "마크이미지(뒤)",
+                                                                                                                                                                                                                                                               "properties":  {
+
+                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                                    "ITEM_ENG_NAME":  {
+                                                                                                                                                                                                                                                          "type":  "string",
+                                                                                                                                                                                                                                                          "description":  "품목영문명",
+                                                                                                                                                                                                                                                          "properties":  {
+
+                                                                                                                                                                                                                                                                         }
+                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                    "CHANGE_DATE":  {
+                                                                                                                                                                                                                                                        "type":  "string",
+                                                                                                                                                                                                                                                        "description":  "변경일",
+                                                                                                                                                                                                                                                        "properties":  {
+
+                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    "MARK_CODE_FRONT":  {
+                                                                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                                                                            "description":  "마크코드(앞)",
+                                                                                                                                                                                                                                                            "properties":  {
+
+                                                                                                                                                                                                                                                                           }
+                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                    "MARK_CODE_BACK":  {
+                                                                                                                                                                                                                                                           "type":  "string",
+                                                                                                                                                                                                                                                           "description":  "마크코드(뒤)",
+                                                                                                                                                                                                                                                           "properties":  {
+
+                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                       },
+                                                                                                                                                                                                                                    "EDI_CODE":  {
+                                                                                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                                                                                     "description":  "보험코드",
+                                                                                                                                                                                                                                                     "properties":  {
+
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                                    "BIZRNO":  {
+                                                                                                                                                                                                                                                   "type":  "string",
+                                                                                                                                                                                                                                                   "description":  "사업자등록번호",
+                                                                                                                                                                                                                                                   "properties":  {
+
+                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                               },
+                                                                                                                                                                                                                                    "STD_CD":  {
+                                                                                                                                                                                                                                                   "type":  "string",
+                                                                                                                                                                                                                                                   "description":  "표준코드",
+                                                                                                                                                                                                                                                   "properties":  {
+
+                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                             }
+                                                                                                                                                                                                }
+                                                                                                                                                                             },
+                                                                                                                                                                   "numOfRows":  {
+                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                     "description":  "한 페이지 결과수",
+                                                                                                                                                                                     "properties":  {
+
+                                                                                                                                                                                                    }
+                                                                                                                                                                                 },
+                                                                                                                                                                   "pageNo":  {
+                                                                                                                                                                                  "type":  "string",
+                                                                                                                                                                                  "description":  "페이지 번호",
+                                                                                                                                                                                  "properties":  {
+
+                                                                                                                                                                                                 }
+                                                                                                                                                                              },
+                                                                                                                                                                   "totalCount":  {
+                                                                                                                                                                                      "type":  "string",
+                                                                                                                                                                                      "description":  "전체 결과 수",
+                                                                                                                                                                                      "properties":  {
+
+                                                                                                                                                                                                     }
+                                                                                                                                                                                  }
+                                                                                                                                                               }
+                                                                                                                                            }
+                                                                                                                               },
+                                                                                                                "xml":  {
+                                                                                                                            "name":  "response"
+                                                                                                                        }
+                                                                                                            }
+                                                                                             }
+                                                                                 },
+                                                                   "tags":  [
+                                                                                "API 목록"
+                                                                            ],
+                                                                   "summary":  "의약품 낱알식별정보조회",
+                                                                   "description":  "품목명, 업체명, 의약품의 모양, 색 등의 의약품 낱알 정보를 목록으로 제공",
+                                                                   "operationId":  "getMdcinGrnIdntfcInfoList03",
+                                                                   "consumes":  [
+                                                                                    "application/json"
+                                                                                ],
+                                                                   "produces":  [
+                                                                                    "application/json",
+                                                                                    "application/xml"
+                                                                                ]
+                                                               },
+                                                       "parameters":  [
+                                                                          {
+                                                                              "name":  "serviceKey",
+                                                                              "description":  "공공데이터포털에서 발급 받은 인증키",
+                                                                              "type":  "string",
+                                                                              "required":  true,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "pageNo",
+                                                                              "description":  "페이지 번호",
+                                                                              "type":  "integer",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "numOfRows",
+                                                                              "description":  "한 페이지 결과수",
+                                                                              "type":  "integer",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "type",
+                                                                              "description":  "응답데이터 형식(xml/json) default : xml",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "item_name",
+                                                                              "description":  "품목명",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "entp_name",
+                                                                              "description":  "업체명",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "item_seq",
+                                                                              "description":  "품목일련번호",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "img_regist_ts",
+                                                                              "description":  "약학정보원 이미지 생성일",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "edi_code",
+                                                                              "description":  "보험코드",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          },
+                                                                          {
+                                                                              "name":  "bizrno",
+                                                                              "description":  "사업자등록번호",
+                                                                              "type":  "string",
+                                                                              "required":  false,
+                                                                              "in":  "query"
+                                                                          }
+                                                                      ]
+                                                   }
+              },
+    "definitions":  {
+                        "getMdcinGrnIdntfcInfoList03_response":  {
+                                                                     "type":  "object",
+                                                                     "properties":  {
+                                                                                        "header":  {
+                                                                                                       "type":  "object",
+                                                                                                       "description":  "header",
+                                                                                                       "properties":  {
+                                                                                                                          "resultCode":  {
+                                                                                                                                             "type":  "string",
+                                                                                                                                             "description":  "결과코드"
+                                                                                                                                         },
+                                                                                                                          "resultMsg":  {
+                                                                                                                                            "type":  "string",
+                                                                                                                                            "description":  "결과메시지"
+                                                                                                                                        }
+                                                                                                                      }
+                                                                                                   },
+                                                                                        "body":  {
+                                                                                                     "type":  "object",
+                                                                                                     "description":  "body",
+                                                                                                     "properties":  {
+                                                                                                                        "items":  {
+                                                                                                                                      "type":  "object",
+                                                                                                                                      "description":  "items",
+                                                                                                                                      "properties":  {
+                                                                                                                                                         "item":  {
+                                                                                                                                                                      "type":  "object",
+                                                                                                                                                                      "description":  "item",
+                                                                                                                                                                      "properties":  {
+                                                                                                                                                                                         "ITEM_SEQ":  {
+                                                                                                                                                                                                          "type":  "string",
+                                                                                                                                                                                                          "description":  "품목일련번호"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                         "ITEM_NAME":  {
+                                                                                                                                                                                                           "type":  "string",
+                                                                                                                                                                                                           "description":  "품목명"
+                                                                                                                                                                                                       },
+                                                                                                                                                                                         "ENTP_SEQ":  {
+                                                                                                                                                                                                          "type":  "string",
+                                                                                                                                                                                                          "description":  "업체일련번호"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                         "ENTP_NAME":  {
+                                                                                                                                                                                                           "type":  "string",
+                                                                                                                                                                                                           "description":  "업체명"
+                                                                                                                                                                                                       },
+                                                                                                                                                                                         "CHART":  {
+                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                       "description":  "성상"
+                                                                                                                                                                                                   },
+                                                                                                                                                                                         "ITEM_IMAGE":  {
+                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                            "description":  "큰제품이미지"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                         "PRINT_FRONT":  {
+                                                                                                                                                                                                             "type":  "string",
+                                                                                                                                                                                                             "description":  "표시(앞)"
+                                                                                                                                                                                                         },
+                                                                                                                                                                                         "PRINT_BACK":  {
+                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                            "description":  "표시(뒤)"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                         "DRUG_SHAPE":  {
+                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                            "description":  "의약품모양"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                         "COLOR_CLASS1":  {
+                                                                                                                                                                                                              "type":  "string",
+                                                                                                                                                                                                              "description":  "색깔(앞)"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                         "COLOR_CLASS2":  {
+                                                                                                                                                                                                              "type":  "string",
+                                                                                                                                                                                                              "description":  "색깔(뒤)"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                         "LINE_FRONT":  {
+                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                            "description":  "분할선(앞)"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                         "LINE_BACK":  {
+                                                                                                                                                                                                           "type":  "string",
+                                                                                                                                                                                                           "description":  "분할선(뒤)"
+                                                                                                                                                                                                       },
+                                                                                                                                                                                         "LENG_LONG":  {
+                                                                                                                                                                                                           "type":  "string",
+                                                                                                                                                                                                           "description":  "크기(장축)"
+                                                                                                                                                                                                       },
+                                                                                                                                                                                         "LENG_SHORT":  {
+                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                            "description":  "크기(단축)"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                         "THICK":  {
+                                                                                                                                                                                                       "type":  "string",
+                                                                                                                                                                                                       "description":  "크기(두께)"
+                                                                                                                                                                                                   },
+                                                                                                                                                                                         "IMG_REGIST_TS":  {
+                                                                                                                                                                                                               "type":  "string",
+                                                                                                                                                                                                               "description":  "약학정보원 이미지 생성일"
+                                                                                                                                                                                                           },
+                                                                                                                                                                                         "CLASS_NO":  {
+                                                                                                                                                                                                          "type":  "string",
+                                                                                                                                                                                                          "description":  "분류번호"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                         "CLASS_NAME":  {
+                                                                                                                                                                                                            "type":  "string",
+                                                                                                                                                                                                            "description":  "분류명"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                         "ETC_OTC_NAME":  {
+                                                                                                                                                                                                              "type":  "string",
+                                                                                                                                                                                                              "description":  "전문/일반"
+                                                                                                                                                                                                          },
+                                                                                                                                                                                         "ITEM_PERMIT_DATE":  {
+                                                                                                                                                                                                                  "type":  "string",
+                                                                                                                                                                                                                  "description":  "품목허가일자"
+                                                                                                                                                                                                              },
+                                                                                                                                                                                         "FORM_CODE_NAME":  {
+                                                                                                                                                                                                                "type":  "string",
+                                                                                                                                                                                                                "description":  "제형코드이름"
+                                                                                                                                                                                                            },
+                                                                                                                                                                                         "MARK_CODE_FRONT_ANAL":  {
+                                                                                                                                                                                                                      "type":  "string",
+                                                                                                                                                                                                                      "description":  "마크내용(앞)"
+                                                                                                                                                                                                                  },
+                                                                                                                                                                                         "MARK_CODE_BACK_ANAL":  {
+                                                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                                                     "description":  "마크내용(뒤)"
+                                                                                                                                                                                                                 },
+                                                                                                                                                                                         "MARK_CODE_FRONT_IMG":  {
+                                                                                                                                                                                                                     "type":  "string",
+                                                                                                                                                                                                                     "description":  "마크이미지(앞)"
+                                                                                                                                                                                                                 },
+                                                                                                                                                                                         "MARK_CODE_BACK_IMG":  {
+                                                                                                                                                                                                                    "type":  "string",
+                                                                                                                                                                                                                    "description":  "마크이미지(뒤)"
+                                                                                                                                                                                                                },
+                                                                                                                                                                                         "ITEM_ENG_NAME":  {
+                                                                                                                                                                                                               "type":  "string",
+                                                                                                                                                                                                               "description":  "품목영문명"
+                                                                                                                                                                                                           },
+                                                                                                                                                                                         "CHANGE_DATE":  {
+                                                                                                                                                                                                             "type":  "string",
+                                                                                                                                                                                                             "description":  "변경일"
+                                                                                                                                                                                                         },
+                                                                                                                                                                                         "MARK_CODE_FRONT":  {
+                                                                                                                                                                                                                 "type":  "string",
+                                                                                                                                                                                                                 "description":  "마크코드(앞)"
+                                                                                                                                                                                                             },
+                                                                                                                                                                                         "MARK_CODE_BACK":  {
+                                                                                                                                                                                                                "type":  "string",
+                                                                                                                                                                                                                "description":  "마크코드(뒤)"
+                                                                                                                                                                                                            },
+                                                                                                                                                                                         "EDI_CODE":  {
+                                                                                                                                                                                                          "type":  "string",
+                                                                                                                                                                                                          "description":  "보험코드"
+                                                                                                                                                                                                      },
+                                                                                                                                                                                         "BIZRNO":  {
+                                                                                                                                                                                                        "type":  "string",
+                                                                                                                                                                                                        "description":  "사업자등록번호"
+                                                                                                                                                                                                    },
+                                                                                                                                                                                         "STD_CD":  {
+                                                                                                                                                                                                        "type":  "string",
+                                                                                                                                                                                                        "description":  "표준코드"
+                                                                                                                                                                                                    }
+                                                                                                                                                                                     }
+                                                                                                                                                                  }
+                                                                                                                                                     }
+                                                                                                                                  },
+                                                                                                                        "numOfRows":  {
+                                                                                                                                          "type":  "string",
+                                                                                                                                          "description":  "한 페이지 결과수"
+                                                                                                                                      },
+                                                                                                                        "pageNo":  {
+                                                                                                                                       "type":  "string",
+                                                                                                                                       "description":  "페이지 번호"
+                                                                                                                                   },
+                                                                                                                        "totalCount":  {
+                                                                                                                                           "type":  "string",
+                                                                                                                                           "description":  "전체 결과 수"
+                                                                                                                                       }
+                                                                                                                    }
+                                                                                                 }
+                                                                                    }
+                                                                 }
+                    },
+    "swaggerOprtinVOs":  [
+                             {
+                                 "oprtinUrl":  "http://data.mfds.go.kr/openapi/MdcinGrnIdntfcInfoService/getMdcinGrnIdntfcInfoList",
+                                 "oprtinNm":  "의약품 낱알식별정보조회",
+                                 "oprtinDc":  "품목명, 업체명, 의약품의 모양, 색 등의 의약품 낱알 정보를 목록으로 제공",
+                                 "gwSvcNm":  "getMdcinGrnIdntfcInfoList03",
+                                 "operationId":  "getMdcinGrnIdntfcInfoList03",
+                                 "publicDataTyDetailCode":  "PRDE02",
+                                 "reqList":  [
+                                                 {
+                                                     "paramtrNm":  "serviceKey",
+                                                     "paramtrDc":  "공공데이터포털에서 발급 받은 인증키",
+                                                     "paramtrBassValue":  "인증키 (URL Encode)",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "필수",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "pageNo",
+                                                     "paramtrDc":  "페이지 번호",
+                                                     "paramtrBassValue":  "1",
+                                                     "paramtrTy":  "integer",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "numOfRows",
+                                                     "paramtrDc":  "한 페이지 결과수",
+                                                     "paramtrBassValue":  "3",
+                                                     "paramtrTy":  "integer",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "type",
+                                                     "paramtrDc":  "응답데이터 형식(xml/json) default : xml",
+                                                     "paramtrBassValue":  "xml",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "item_name",
+                                                     "paramtrDc":  "품목명",
+                                                     "paramtrBassValue":  "가스디알정50밀리그램(디메크로틴산마그네슘)",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "entp_name",
+                                                     "paramtrDc":  "업체명",
+                                                     "paramtrBassValue":  "일동제약(주)",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "item_seq",
+                                                     "paramtrDc":  "품목일련번호",
+                                                     "paramtrBassValue":  "200808876",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "img_regist_ts",
+                                                     "paramtrDc":  "약학정보원 이미지 생성일",
+                                                     "paramtrBassValue":  "20100326",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "edi_code",
+                                                     "paramtrDc":  "보험코드",
+                                                     "paramtrBassValue":  "null",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "bizrno",
+                                                     "paramtrDc":  "사업자등록번호",
+                                                     "paramtrBassValue":  "6828500435",
+                                                     "paramtrTy":  "string",
+                                                     "paramtrDivision":  "옵션",
+                                                     "ck":  true
+                                                 }
+                                             ],
+                                 "resList":  [
+                                                 {
+                                                     "paramtrNm":  "header",
+                                                     "paramtrDc":  "header",
+                                                     "arrayYn":  "N",
+                                                     "paramtrDefNm":  "#/definitions/header",
+                                                     "subDefNm":  "header",
+                                                     "paramtrTy":  "object",
+                                                     "paramtrDivision":  "필수",
+                                                     "ck":  true,
+                                                     "subParam":  [
+                                                                      {
+                                                                          "paramtrNm":  "resultCode",
+                                                                          "paramtrDc":  "결과코드",
+                                                                          "arrayYn":  "N",
+                                                                          "paramtrDefNm":  "",
+                                                                          "paramtrTy":  "string",
+                                                                          "paramtrDivision":  "필수",
+                                                                          "ck":  true
+                                                                      },
+                                                                      {
+                                                                          "paramtrNm":  "resultMsg",
+                                                                          "paramtrDc":  "결과메시지",
+                                                                          "arrayYn":  "N",
+                                                                          "paramtrDefNm":  "",
+                                                                          "paramtrTy":  "string",
+                                                                          "paramtrDivision":  "필수",
+                                                                          "ck":  true
+                                                                      }
+                                                                  ]
+                                                 },
+                                                 {
+                                                     "paramtrNm":  "body",
+                                                     "paramtrDc":  "body",
+                                                     "arrayYn":  "N",
+                                                     "paramtrDefNm":  "#/definitions/body",
+                                                     "subDefNm":  "body",
+                                                     "paramtrTy":  "object",
+                                                     "paramtrDivision":  "필수",
+                                                     "ck":  true,
+                                                     "subParam":  [
+                                                                      {
+                                                                          "paramtrNm":  "items",
+                                                                          "paramtrDc":  "items",
+                                                                          "arrayYn":  "N",
+                                                                          "paramtrDefNm":  "#/definitions/items",
+                                                                          "subDefNm":  "items",
+                                                                          "paramtrTy":  "object",
+                                                                          "paramtrDivision":  "필수",
+                                                                          "ck":  true,
+                                                                          "subParam":  [
+                                                                                           {
+                                                                                               "paramtrNm":  "item",
+                                                                                               "paramtrDc":  "item",
+                                                                                               "arrayYn":  "N",
+                                                                                               "paramtrDefNm":  "#/definitions/item",
+                                                                                               "subDefNm":  "item",
+                                                                                               "paramtrTy":  "object",
+                                                                                               "paramtrDivision":  "필수",
+                                                                                               "ck":  true,
+                                                                                               "subParam":  [
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ITEM_SEQ",
+                                                                                                                    "paramtrDc":  "품목일련번호",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ITEM_NAME",
+                                                                                                                    "paramtrDc":  "품목명",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ENTP_SEQ",
+                                                                                                                    "paramtrDc":  "업체일련번호",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ENTP_NAME",
+                                                                                                                    "paramtrDc":  "업체명",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "CHART",
+                                                                                                                    "paramtrDc":  "성상",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ITEM_IMAGE",
+                                                                                                                    "paramtrDc":  "큰제품이미지",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "PRINT_FRONT",
+                                                                                                                    "paramtrDc":  "표시(앞)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "PRINT_BACK",
+                                                                                                                    "paramtrDc":  "표시(뒤)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "DRUG_SHAPE",
+                                                                                                                    "paramtrDc":  "의약품모양",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "COLOR_CLASS1",
+                                                                                                                    "paramtrDc":  "색깔(앞)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "COLOR_CLASS2",
+                                                                                                                    "paramtrDc":  "색깔(뒤)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "LINE_FRONT",
+                                                                                                                    "paramtrDc":  "분할선(앞)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "LINE_BACK",
+                                                                                                                    "paramtrDc":  "분할선(뒤)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "LENG_LONG",
+                                                                                                                    "paramtrDc":  "크기(장축)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "LENG_SHORT",
+                                                                                                                    "paramtrDc":  "크기(단축)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "THICK",
+                                                                                                                    "paramtrDc":  "크기(두께)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "IMG_REGIST_TS",
+                                                                                                                    "paramtrDc":  "약학정보원 이미지 생성일",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "CLASS_NO",
+                                                                                                                    "paramtrDc":  "분류번호",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "CLASS_NAME",
+                                                                                                                    "paramtrDc":  "분류명",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ETC_OTC_NAME",
+                                                                                                                    "paramtrDc":  "전문/일반",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ITEM_PERMIT_DATE",
+                                                                                                                    "paramtrDc":  "품목허가일자",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "FORM_CODE_NAME",
+                                                                                                                    "paramtrDc":  "제형코드이름",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "MARK_CODE_FRONT_ANAL",
+                                                                                                                    "paramtrDc":  "마크내용(앞)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "MARK_CODE_BACK_ANAL",
+                                                                                                                    "paramtrDc":  "마크내용(뒤)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "MARK_CODE_FRONT_IMG",
+                                                                                                                    "paramtrDc":  "마크이미지(앞)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "MARK_CODE_BACK_IMG",
+                                                                                                                    "paramtrDc":  "마크이미지(뒤)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "ITEM_ENG_NAME",
+                                                                                                                    "paramtrDc":  "품목영문명",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "CHANGE_DATE",
+                                                                                                                    "paramtrDc":  "변경일",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "MARK_CODE_FRONT",
+                                                                                                                    "paramtrDc":  "마크코드(앞)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "MARK_CODE_BACK",
+                                                                                                                    "paramtrDc":  "마크코드(뒤)",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "EDI_CODE",
+                                                                                                                    "paramtrDc":  "보험코드",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "BIZRNO",
+                                                                                                                    "paramtrDc":  "사업자등록번호",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "paramtrNm":  "STD_CD",
+                                                                                                                    "paramtrDc":  "표준코드",
+                                                                                                                    "arrayYn":  "N",
+                                                                                                                    "paramtrDefNm":  "",
+                                                                                                                    "paramtrTy":  "string",
+                                                                                                                    "paramtrDivision":  "옵션",
+                                                                                                                    "ck":  true
+                                                                                                                }
+                                                                                                            ]
+                                                                                           }
+                                                                                       ]
+                                                                      },
+                                                                      {
+                                                                          "paramtrNm":  "numOfRows",
+                                                                          "paramtrDc":  "한 페이지 결과수",
+                                                                          "arrayYn":  "N",
+                                                                          "paramtrDefNm":  "",
+                                                                          "paramtrTy":  "string",
+                                                                          "paramtrDivision":  "필수",
+                                                                          "ck":  true
+                                                                      },
+                                                                      {
+                                                                          "paramtrNm":  "pageNo",
+                                                                          "paramtrDc":  "페이지 번호",
+                                                                          "arrayYn":  "N",
+                                                                          "paramtrDefNm":  "",
+                                                                          "paramtrTy":  "string",
+                                                                          "paramtrDivision":  "필수",
+                                                                          "ck":  true
+                                                                      },
+                                                                      {
+                                                                          "paramtrNm":  "totalCount",
+                                                                          "paramtrDc":  "전체 결과 수",
+                                                                          "arrayYn":  "N",
+                                                                          "paramtrDefNm":  "",
+                                                                          "paramtrTy":  "string",
+                                                                          "paramtrDivision":  "필수",
+                                                                          "ck":  true
+                                                                      }
+                                                                  ]
+                                                 }
+                                             ]
+                             }
+                         ]
+}

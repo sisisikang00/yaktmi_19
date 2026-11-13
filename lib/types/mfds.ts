@@ -1,0 +1,126 @@
+﻿// Generated from the official portal Swagger schemas in docs/api; all fields are optional upstream strings.
+export interface IdentificationItem {
+  ITEM_SEQ?: string;
+  ITEM_NAME?: string;
+  ENTP_SEQ?: string;
+  ENTP_NAME?: string;
+  CHART?: string;
+  ITEM_IMAGE?: string;
+  PRINT_FRONT?: string;
+  PRINT_BACK?: string;
+  DRUG_SHAPE?: string;
+  COLOR_CLASS1?: string;
+  COLOR_CLASS2?: string;
+  LINE_FRONT?: string;
+  LINE_BACK?: string;
+  LENG_LONG?: string;
+  LENG_SHORT?: string;
+  THICK?: string;
+  IMG_REGIST_TS?: string;
+  CLASS_NO?: string;
+  CLASS_NAME?: string;
+  ETC_OTC_NAME?: string;
+  ITEM_PERMIT_DATE?: string;
+  FORM_CODE_NAME?: string;
+  MARK_CODE_FRONT_ANAL?: string;
+  MARK_CODE_BACK_ANAL?: string;
+  MARK_CODE_FRONT_IMG?: string;
+  MARK_CODE_BACK_IMG?: string;
+  ITEM_ENG_NAME?: string;
+  CHANGE_DATE?: string;
+  MARK_CODE_FRONT?: string;
+  MARK_CODE_BACK?: string;
+  EDI_CODE?: string;
+  BIZRNO?: string;
+  STD_CD?: string;
+}
+export interface PermitListItem {
+  BIZRNO?: string;
+  ITEM_SEQ?: string;
+  ITEM_NAME?: string;
+  ITEM_ENG_NAME?: string;
+  ENTP_NAME?: string;
+  ENTP_ENG_NAME?: string;
+  ENTP_SEQ?: string;
+  ENTP_NO?: string;
+  ITEM_PERMIT_DATE?: string;
+  INDUTY?: string;
+  PRDLST_STDR_CODE?: string;
+  SPCLTY_PBLC?: string;
+  PRDUCT_TYPE?: string;
+  PRDUCT_PRMISN_NO?: string;
+  ITEM_INGR_NAME?: string;
+  ITEM_INGR_CNT?: string;
+  BIG_PRDT_IMG_URL?: string;
+  PERMIT_KIND_CODE?: string;
+  CANCEL_DATE?: string;
+  CANCEL_NAME?: string;
+  EDI_CODE?: string;
+}
+export interface PermitDetailItem {
+  ITEM_SEQ?: string;
+  ITEM_NAME?: string;
+  ENTP_NAME?: string;
+  ITEM_PERMIT_DATE?: string;
+  CNSGN_MANUF?: string;
+  ETC_OTC_CODE?: string;
+  CHART?: string;
+  BAR_CODE?: string;
+  MATERIAL_NAME?: string;
+  EE_DOC_ID?: string;
+  UD_DOC_ID?: string;
+  NB_DOC_ID?: string;
+  INSERT_FILE?: string;
+  STORAGE_METHOD?: string;
+  VALID_TERM?: string;
+  REEXAM_TARGET?: string;
+  REEXAM_DATE?: string;
+  PACK_UNIT?: string;
+  EDI_CODE?: string;
+  PERMIT_KIND_NAME?: string;
+  ENTP_NO?: string;
+  MAKE_MATERIAL_FLAG?: string;
+  NEWDRUG_CLASS_NAME?: string;
+  INDUTY_TYPE?: string;
+  CANCEL_DATE?: string;
+  CANCEL_NAME?: string;
+  CHANGE_DATE?: string;
+  NARCOTIC_KIND_CODE?: string;
+  GBN_NAME?: string;
+  TOTAL_CONTENT?: string;
+  EE_DOC_DATA?: string;
+  UD_DOC_DATA?: string;
+  NB_DOC_DATA?: string;
+  PN_DOC_DATA?: string;
+  MAIN_ITEM_INGR?: string;
+  INGR_NAME?: string;
+  ATC_CODE?: string;
+  ITEM_ENG_NAME?: string;
+  ENTP_ENG_NAME?: string;
+  MAIN_INGR_ENG?: string;
+  BIZRNO?: string;
+  RARE_DRUG_YN?: string;
+  DATA_PROTECT_START_DATE?: string;
+  DATA_PROTECT_END_DATE?: string;
+}
+export interface IngredientItem {
+  MTRAL_NM?: string;
+  QNT?: string;
+  INGD_UNIT_CD?: string;
+  ITEM_SEQ?: string;
+  MAIN_INGR_ENG?: string;
+  BIZRNO?: string;
+  CPNT_CTNT_CONT?: string;
+  TAMT_SEQ?: string;
+  ENTRPS_PRMISN_NO?: string;
+  ENTRPS?: string;
+  PRDUCT?: string;
+  MTRAL_SN?: string;
+  MTRAL_CODE?: string;
+}
+export interface EasyDrugItem {
+  entpName?: string; itemName?: string; itemSeq?: string;
+  efcyQesitm?: string; useMethodQesitm?: string; atpnWarnQesitm?: string;
+  atpnQesitm?: string; intrcQesitm?: string; seQesitm?: string;
+  depositMethodQesitm?: string; openDe?: string; updateDe?: string; itemImage?: string;
+}
